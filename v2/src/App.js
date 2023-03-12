@@ -2,8 +2,6 @@ import "./App.css";
 import data from "./components/data.json";
 
 function App() {
-  let img = data.imgsrc;
-  console.log(img);
   return (
     <div className="App">
       {data.map((data) => {
