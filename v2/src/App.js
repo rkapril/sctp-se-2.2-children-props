@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import data from "./components/data.json";
 
 function App() {
+  let img = data.imgsrc;
+  console.log(img);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {data.map((data) => {
+        return (
+          <div className="card">
+            <h1>{data.name}</h1>
+            {data.imgsrc.map((url) => (
+              <img className="avatar" src={url} alt="" />
+            ))}
+            <p>{data.text}</p>
+          </div>
+        );
+      })}
     </div>
   );
 }

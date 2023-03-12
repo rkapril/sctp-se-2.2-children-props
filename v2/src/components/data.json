@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Profile",
+    "imgsrc": ["https://picsum.photos/id/23/100"],
+    "text": "Hello there!"
+  },
+  {
+    "name": "Photos",
+    "imgsrc": [
+      "https://picsum.photos/id/128/100",
+      "https://picsum.photos/id/235/100",
+      "https://picsum.photos/id/345/100"
+    ],
+    "text": ""
+  },
+
+  {
+    "name": "About",
+    "imgsrc": [],
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt vehicula efficitur. Aliquam sed elementum diam, nec porttitor quam."
+  }
+]
